@@ -25,6 +25,7 @@ export type Invoice = {
   // It means that the "status" property can only be one of the two strings: 'pending' or 'paid'.
   status: 'pending' | 'paid';
 };
+// 通过使用 TypeScript，可以确保不会意外地将错误的数据格式传递给组件或数据库，例如将 a string 而不是 a number 传递给发票 amount 。
 
 export type Revenue = {
   month: string;
